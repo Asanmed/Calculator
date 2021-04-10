@@ -1,0 +1,96 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    #dcdae7 0%,
+    #4d4c4ed2 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  padding-top: 20px;
+  user-select: none;
+}
+
+.react-calculator {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  border-radius: 20px;
+  background-color: #353535;
+  box-shadow: 0 19px 38px rgba(19, 19, 19, 0.24),
+    0 15px 12px rgba(19, 19, 19, 0.12);
+}
+
+button {
+  outline: none;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 20px;
+  line-height: 1;
+  background-color: transparent;
+  color: #ececec;
+  transition: all 300ms;
+  border: 3px solid #0001;
+}
+
+button:hover {
+  border: 1px solid #646464;
+  background-color: #555555;
+}
+
+.result {
+  position: relative;
+  width: 320px;
+  height: 80px;
+  padding: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(19, 19, 19, 0.64);
+  font-size: 32px;
+  line-height: 2;
+  color: #e2e2e2;
+  text-align: right;
+  direction: rtl;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.functions button,
+.math-operations button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  color: #ececec;
+}
+
+.math-operations button:last-child {
+  background-color: rgb(212, 144, 18);
+}
+
+.numbers {
+  width: 240px;
+  float: left;
+}
+
+.numbers button {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.numbers button:last-child {
+  width: 100%;
+}
+
+.functions {
+  float: left;
+  width: 240px;
+}
